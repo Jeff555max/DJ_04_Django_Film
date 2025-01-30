@@ -1,4 +1,13 @@
 # DJ_04_Django_Film
+
+pip install django
+
+django-admin startproject movie_project
+
+cd movie_project
+
+python -m pip install Pillow
+
 ### Задание
 Создайте проект с именем movie_project и приложение
 в нем films. Создайте модель(таблицу) в которой будет

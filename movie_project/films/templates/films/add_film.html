@@ -1,0 +1,27 @@
+{% extends 'films/base.html' %}
+
+{% block title %}Добавить фильм{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Добавить фильм</h1>
+<form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="mb-3">
+        {{ form.title.label_tag }}
+        {{ form.title }}
+        {{ form.title.errors }}
+    </div>
+    <div class="mb-3">
+        {{ form.description.label_tag }}
+        {{ form.description }}
+        {{ form.description.errors }}
+    </div>
+    <div class="mb-3">
+        {{ form.review.label_tag }}
+        {{ form.review }}
+        {{ form.review.errors }}
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>
+{% endblock %}
