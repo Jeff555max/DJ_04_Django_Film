@@ -1,12 +1,16 @@
 # DJ_04_Django_Film
+Для запуска проекта, выполните следующие команды
 
 pip install django
 
-django-admin startproject movie_project
-
-cd movie_project
-
 python -m pip install Pillow
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py runserver
+
 
 ### Задание
 Создайте проект с именем movie_project и приложение
