@@ -11,6 +11,9 @@
                 <h5>{{ film.title }}</h5>
                 <p>{{ film.description }}</p>
                 <p><strong>Отзыв:</strong> {{ film.review }}</p>
+                {% if film.poster %}
+                    <img src="{{ film.poster.url }}" alt="Постер" class="img-fluid" style="max-width: 200px;">
+                {% endif %}
             </div>
         {% endfor %}
     </div>
